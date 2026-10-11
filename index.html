@@ -45,7 +45,6 @@
     const img = new Image();
     img.src = pad(n) + ".png";
     img.alt = "포트폴리오 " + n + "페이지";
-    img.loading = n <= 2 ? "eager" : "lazy";
     img.onload = function () {
       container.appendChild(img);
       loadPage(n + 1);
